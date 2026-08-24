@@ -1,0 +1,81 @@
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==============================
+# Virtual Environment
+# ==============================
+
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================
+# Django
+# ==============================
+
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# ==============================
+# Environment Variables / Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+# IDE / Editor
+# ==============================
+
+.vscode/
+.idea/
+
+# ==============================
+# OS Generated Files
+# ==============================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Python Packaging
+# ==============================
+
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ==============================
+# Coverage / Testing
+# ==============================
+
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+
+# ==============================
+# Django Static / Media
+# ==============================
+
+media/
+staticfiles/
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+
+.ipynb_checkpoints/

@@ -1,0 +1,139 @@
+{% extends "todo/base.html" %}
+
+{% block title %}
+
+    {% if task %}
+        Edit Task
+    {% else %}
+        Add Task
+    {% endif %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-md-8">
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <h2 class="mb-4">
+
+                    {% if task %}
+                        Edit Task
+                    {% else %}
+                        Add Task
+                    {% endif %}
+
+                </h2>
+
+
+                <form method="post">
+
+                    {% csrf_token %}
+
+
+                    <!-- Title -->
+
+                    <div class="mb-3">
+
+                        <label
+                            for="title"
+                            class="form-label"
+                        >
+                            Title
+                        </label>
+
+                        <input
+                            type="text"
+                            name="title"
+                            id="title"
+                            class="form-control"
+                            value="{% if task %}{{ task.title }}{% else %}{{ title|default:'' }}{% endif %}"
+                            placeholder="Enter task title"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Description -->
+
+                    <div class="mb-3">
+
+                        <label
+                            for="description"
+                            class="form-label"
+                        >
+                            Description
+                        </label>
+
+                        <textarea
+                            name="description"
+                            id="description"
+                            class="form-control"
+                            rows="5"
+                            placeholder="Enter task description"
+                        >{% if task %}{{ task.description }}{% else %}{{ description|default:'' }}{% endif %}</textarea>
+
+                    </div>
+
+
+                    {% if task %}
+
+                        <div class="form-check mb-3">
+
+                            <input
+                                type="checkbox"
+                                name="completed"
+                                id="completed"
+                                class="form-check-input"
+                                {% if task.completed %}checked{% endif %}
+                            >
+
+                            <label
+                                for="completed"
+                                class="form-check-label"
+                            >
+                                Mark as completed
+                            </label>
+
+                        </div>
+
+                    {% endif %}
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        {% if task %}
+                            Update Task
+                        {% else %}
+                            Create Task
+                        {% endif %}
+                    </button>
+
+
+                    <a
+                        href="{% url 'todo:task_list' %}"
+                        class="btn btn-secondary"
+                    >
+                        Cancel
+                    </a>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
