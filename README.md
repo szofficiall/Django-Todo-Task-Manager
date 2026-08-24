@@ -507,16 +507,6 @@ Django-Todo-Task-Manager/
 │       ├── task_list.html
 │       ├── task_form.html
 │       └── task_confirm_delete.html
-│
-│
-└── screenshots/
-    │
-    ├── task-list.png
-    ├── create-task.png
-    ├── update-task.png
-    ├── delete-task.png
-    └── completed-task.png
-```
 
 > `project/` ko apne actual Django project folder ke naam se replace karna.
 
