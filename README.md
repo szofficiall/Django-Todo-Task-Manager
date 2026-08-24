@@ -735,45 +735,6 @@ use kiya gaya hai.
 
 ---
 
-# 📸 Screenshots
-
-Add your application screenshots inside:
-
-```text
-screenshots/
-```
-
-Recommended screenshots:
-
-### 🏠 Task List
-
-![Task List](screenshots/task-list.png)
-
----
-
-### ➕ Create Task
-
-![Create Task](screenshots/create-task.png)
-
----
-
-### ✏️ Update Task
-
-![Update Task](screenshots/update-task.png)
-
----
-
-### 🗑️ Delete Confirmation
-
-![Delete Confirmation](screenshots/delete-task.png)
-
----
-
-### ✅ Completed Task
-
-![Completed Task](screenshots/completed-task.png)
-
----
 
 # ⚙️ Installation
 
@@ -784,7 +745,7 @@ Follow the steps below to run this project locally.
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Django-Todo-Task-Manager.git
+git clone https://github.com/szofficiall/Django-Todo-Task-Manager.git
 ```
 
 ---
@@ -1075,7 +1036,7 @@ git branch -M main
 Add remote:
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/Django-Todo-Task-Manager.git
+git remote add origin https://github.com/szofficiall/Django-Todo-Task-Manager.git
 ```
 
 Push:
@@ -1282,7 +1243,7 @@ Fork this repository.
 Clone your fork:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Django-Todo-Task-Manager.git
+git clone https://github.com/szofficiall/Django-Todo-Task-Manager.git
 ```
 
 ## Step 3
@@ -1342,8 +1303,6 @@ If you found this project useful or helpful:
 ### ⭐ Star this repository
 
 ### 🍴 Fork this repository
-
-### 🐛 Report issues
 
 ### 💡 Suggest improvements
 
